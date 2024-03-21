@@ -1,15 +1,13 @@
-
-
 const hasPath = (graph, src, dst) => {
-    if (src == dst) return true;
+  if (src === dst) return true;
 
-    for (let neighbor of graph[src]){
-        if (hasPath(graph, neighbor, dst) == true){
-            return true;            
-        }
+  for (const neighbor of graph[src]) {
+    if (hasPath(graph, neighbor, dst) === true) {
+      return true;
     }
+  }
 
-    return false
-}
+  return false;
+};
 
-export default hasPath
+export default hasPath;
