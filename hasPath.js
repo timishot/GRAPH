@@ -3,6 +3,7 @@ const hasPath = (graph, src, dst) => {
 
   for (const neighbor of graph[src]) {
     if (hasPath(graph, neighbor, dst) === true) {
+      console.log('i found you');
       return true;
     }
   }

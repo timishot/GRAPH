@@ -1,0 +1,10 @@
+.container {
+    display: table;
+    height: 200px;
+    border: 1px solid #ccc;
+  }
+  
+  .inline-block-element {
+    display: table-cell;
+    vertical-align: bottom;
+  }
