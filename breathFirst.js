@@ -8,6 +8,7 @@ const breadthFistPrint = (graph, source) => {
     }
   }
 };
+// the graph used
 const graph = {
   a: ['b', 'c'],
   b: ['d'],
