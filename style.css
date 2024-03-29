@@ -1,10 +1,6 @@
-.container {
-    display: table;
-    height: 200px;
-    border: 1px solid #ccc;
-  }
-  
-  .inline-block-element {
-    display: table-cell;
-    vertical-align: bottom;
-  }
+.nav .nav-item + .nav-item {
+  /* CSS rules for adjacent .nav-item elements */
+  /* For example: */
+  margin-left: 10px;
+  font-weight: bold;
+}
