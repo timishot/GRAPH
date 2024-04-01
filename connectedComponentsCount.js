@@ -1,8 +1,7 @@
 const explore = (graph, current, visited) => {
+  console.log(current);
   if (visited.has(current)) return false;
-
   visited.add(current);
-
   for (const neighbour of graph[current]) {
     explore(graph, neighbour, visited);
   }
