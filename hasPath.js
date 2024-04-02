@@ -11,4 +11,13 @@ const hasPath = (graph, src, dst) => {
   return false;
 };
 
-export default hasPath;
+const graph = {
+  f: ['g', 'i'],
+  g: ['h'],
+  h: [],
+  i: ['g', 'k'],
+  j: ['i'],
+  k: [],
+};
+
+hasPath(graph, 'f', 'k');
