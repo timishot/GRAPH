@@ -3,6 +3,7 @@ const buildGraph = (edges) => {
 
   for (const edge of edges) {
     const [a, b] = edge;
+    // creating a adjacent list
     if (!(a in graph)) graph[a] = [];
     if (!(b in graph)) graph[b] = [];
     graph[a].push(b);
